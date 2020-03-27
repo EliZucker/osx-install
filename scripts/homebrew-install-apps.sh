@@ -52,3 +52,4 @@ brew cask install whatsyoursign
 brew cask install oversight
 brew cask install discord
 brew cask install arduino
+brew cask install disk-inventory-x
