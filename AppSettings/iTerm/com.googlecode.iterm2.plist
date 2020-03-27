@@ -23,7 +23,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/GitHub/osx-install/AppSettings/iTerm</string>
+	<string>~/GitHub/osx-install/AppSettings</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -2008,7 +2008,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 900}}</string>
 		<key>topLeft</key>
-		<string>{243, 771}</string>
+		<string>{264, 483}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -2020,6 +2020,10 @@
 	<real>592799230.20115197</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>25</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>1</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>592003034.98962796</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2884,7 +2888,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/eli/GitHub/osx-install/AppSettings/iTerm</string>
+	<string>/Users/eli/GitHub/osx-install/AppSettings</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -2896,7 +2900,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-26T04:45:15Z</date>
+	<date>2020-03-27T04:49:15Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
