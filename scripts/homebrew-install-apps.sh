@@ -18,20 +18,6 @@ brew install wget
 brew install sqlite
 brew install youtube-dl
 
-
-# #Install Zsh & Oh My Zsh
-# echo "Installing Oh My ZSH..."
-# curl -L http://install.ohmyz.sh | sh
-
-# ZSH: TO BE DETERMINED
-# brew install zsh
-# brew install zsh-autosuggestions
-# add this line to zshrc:
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# echo "Setting ZSH as shell..."
-# chsh -s /bin/zsh
-
 brew cask install anaconda
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools

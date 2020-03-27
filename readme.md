@@ -1,3 +1,7 @@
+# TODO:
+- Conda install
+- Screenshot Brew list
+
 # MacOS Buildout
 
 Repository is based on: [BLOG: Rapid Complete Install / Reinstall OS X Like a Champ in Three-ish Hours](http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours)
@@ -22,7 +26,7 @@ Do the following before paving the partition. This is to get the way I have thin
   - `~/Movies`
   - *review other folders in the root*
 - Dev
-  - Dump list of all repos in `~/repos` => **{{PRIVATE_BACKUP}}**
+  - Dump list of all repos in `~/GitHub` => **{{PRIVATE_BACKUP}}**
 - Visual Studio Code
   - refresh installed extensions install list: **[./scripts/vscode-ext-install.sh](./scripts/vscode-ext-install.sh)**
 
@@ -82,23 +86,18 @@ The following installs & configuration should be done to setup automated install
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install.sh | sh
+curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/homebrew-install.sh | sh
 ```
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
 
 Install apps using Homebrew.
 
-# TODO: 
-- CHANGE GITHUB LINKS TO MY OWN
-- Conda install
-- Screenshot Brew list
-
 
 > **NOTE**: Monitor the terminal for password prompts & errors/warnings.
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/homebrew-install-apps.sh | sh
+curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/homebrew-install-apps.sh | sh
 ```
 
 ### Install Mac App Store apps: `macos-install.sh`
@@ -106,7 +105,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 Install apps from the Apple App Store.
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/macos-install.sh | sh
+curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/macos-install.sh | sh
 ```
 
 ### Manual Installs
@@ -130,7 +129,7 @@ Three step process:
   - install extensions collected before pave:
 
       ```bash
-      curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/vscode-ext-install.sh | sh
+      curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/vscode-ext-install.sh | sh
       ```
 
   - copy snippets & settings:
@@ -143,7 +142,7 @@ Three step process:
 Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/cmdprompt-install.sh | sh
+curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/cmdprompt-install.sh | sh
 ```
 
 - iTerm
@@ -168,8 +167,6 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ### Configure Installed Apps
 
 
-- iStat Settings
-  - license & restore settings: [./AppSettings/iStat Menus Settings.ismp](./AppSettings/iStat%20Menus%20Settings.ismp)
 - Menubar layout:
 
     ![](./images/macOS-MenuBar.png)
@@ -180,7 +177,7 @@ curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scrip
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
 ```bash
-curl -L https://raw.githubusercontent.com/andrewconnell/osx-install/master/scripts/scripted-installs.sh | sh
+curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/scripted-installs.sh | sh
 ```
 
 - Creative Cloud installs (currently the only item in list above)
