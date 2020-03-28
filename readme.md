@@ -1,7 +1,3 @@
-# TODO:
-- Conda install
-- Screenshot Brew list
-
 # MacOS Buildout
 
 Repository is based on: [BLOG: Rapid Complete Install / Reinstall OS X Like a Champ in Three-ish Hours](http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours)
@@ -50,8 +46,6 @@ Do the following before paving the partition. This is to get the way I have thin
 
     ![](images/macOS-Finder-Settings-General.png)
 
-    ![](images/macOS-Finder-Settings-Preferences.png)
-
     ![](images/macOS-Finder-Settings-Sidebar.png)
 
 - screenshot MacOS dock
@@ -63,7 +57,6 @@ Do the following before paving the partition. This is to get the way I have thin
     ![](images/macOS-MenuBar.png)
 
 
-- export list of VMs => **{{PRIVATE_BACKUP}}**
 - Mac App Store apps
 - refresh list installed MacOS apps: **[./scripts/macos-install.sh](./scripts/macos-install.sh)**
 
@@ -110,15 +103,10 @@ curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/m
 
 ### Manual Installs
 
-- MANUAL INSTALLS HERE
+- Arduino IDE needs to be installed manually
+- Install Muse 4.0 Alpha 1 from [releases](https://github.com/xzzz9097/Muse/releases)
 
 ## Configure apps
-
-Three step process:
-
-1. Get Google Chrome syncing to get access to backups, settings, licenses & passwords
-1. Configure command prompt
-1. Login, license, install, & configure remaining apps
 
 ### Configure core apps to acquire backups, licenses & passwords
 
@@ -135,7 +123,14 @@ Three step process:
   - copy snippets & settings:
     - from **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
     - to `~/Library/Application Support/Code/User`
-  - apply licenses to extensions Quokka & Wallaby
+
+- Configure keyboard:
+  - Launch Karabiner
+  - Then quit and copy configs to `~/.config ` (orignally in AppSettings folder)
+
+- Configure Window Management:
+  - Launch Spectacle
+  - Then quit and copy shortcuts to `~/Library/Application Support/Spectacle`
 
 ### Setup command prompt (iTerm)
 
@@ -145,10 +140,14 @@ Install ZSH, Oh My ZSH, iTerm & copy fonts & themes:
 curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/cmdprompt-install.sh | sh
 ```
 
+Then copy backed up `./.zshrc`
+and run this line in a new session:
+ ```
+conda config --set auto_activate_base False
+```
+
 - iTerm
   - import settings from **[./AppSettings/iTerm](./AppSettings/iTerm)**
-  - apply custom **robbyrussel** theme
-    - update `~/.zshrc` to specify the theme used: `ZSH_THEME="robbyrussell"` (I think that this is the default..)
   - setup SSH keys
     - copy backed up `./.ssh` keys from **{{PRIVATE_BACKUP}}** => `./.ssh`
     - configure SSH keys
@@ -173,6 +172,8 @@ curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/c
 
 - NordVPN
 - Slack
+- Register Stay/Fantastical
+- 
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
@@ -184,6 +185,7 @@ curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/s
   - Acrobat DC
   - Lightroom CC
   - Photoshop 2020
+  - Disable launch on startup!
 
 
 ## Post installation & configuration checks
@@ -202,36 +204,27 @@ brew cask cleanup
 > NOTE: This might already be done by copying the hidden **~./.gitconfig**.
 
 ```bash
-git config --global user.name "EliZucker"
+git config --global user.name "Eli Zucker"
 git config --global user.email "eli_zucker@brown.edu"
 git config --global credential.helper osxkeychain
 ```
 
 ### MacOS Tweaks
 
+- Adjust finder to screenshots above
+
 - System Preferences
 
   - Dock
-    - settings: **System Preferences > Dock**
+      ![](./images/macOS-Dock.png)
 
-        ![](./images/macOS-SysPrefs-Dock.png)
+  - Trackpad
 
-    - update dock to the backup image
-
-        ![](./images/macOS-Dock.png)
-
-  - General
-
-      ![](./images/macOS-SysPrefs-General.png)
+    - Enable tap to click and app-expose
 
   - Keyboard
 
       ![](./images/macOS-SysPrefs-Keyboard.png)
-
-
-  - Mission Control
-
-      ![](./images/macOS-SysPrefs-MissionControll.png)
 
   - Internet Accounts
 
@@ -243,6 +236,7 @@ git config --global credential.helper osxkeychain
 ### Data Restore
 
 - Clone select repositories from github => `~/GitHub`
+- Copy remaining backed up folders (e.g Downloads, Desktop)
 
 ### Setup TimeMachine Backups
 

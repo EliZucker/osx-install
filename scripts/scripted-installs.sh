@@ -16,7 +16,7 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 #"Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+defaults write com.apple.finder FXPreferredViewStyle clmv
 
 #"Speeding up Mission Control animations and grouping windows by application"
 # defaults write com.apple.dock expose-animation-duration -float 0.1
@@ -24,8 +24,10 @@ defaults write com.apple.finder FXPreferredViewStyle Clmv
 
 #"Setting Dock to auto-hide and removing the auto-hiding delay"
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-delay -int 0
 defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock show-recents -int 0
+killall Dock
 
 #"Setting email addresses to copy as 'foo@example.com' instead of 'Foo Bar <foo@example.com>' in Mail.app"
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false

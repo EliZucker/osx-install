@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # install mas-cli to install from the Mac App store
 brew install mas
