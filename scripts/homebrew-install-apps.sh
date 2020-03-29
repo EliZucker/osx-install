@@ -36,7 +36,6 @@ brew cask install qbittorrent
 brew cask install handbrake
 brew cask install appcleaner
 brew cask install fantastical
-brew cask install muse
 brew cask install intellij-idea
 brew cask install stay
 brew cask install docker

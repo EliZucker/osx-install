@@ -66,7 +66,7 @@ Do the following before paving the partition. This is to get the way I have thin
 
 ## Pave partition
 
-1. restart with COMMAND+R
+1. restart with COMMAND+R (add OPTION for internet recovery)
 1. when apple logo comes up... delete partition, NOT tiny partition (2nd listed)
 1. install MacOS via internet
 
@@ -153,14 +153,14 @@ conda config --set auto_activate_base False
     - configure SSH keys
 
         ```bash
+        # configure 'config' folder permissions
+        sudo chmod 600 ~/.ssh/id_rsa
+
         # add key to SSH agent
         ssh-add ~/.ssh/id_rsa
 
         # add to keychain
-        ssh-add -K
-
-        # configure 'config' folder permissions
-        sudo chmod 600 ~/.ssh/id_rsa
+        ssh-add -K ~/.ssh/id_rsa
         ```
 
 ### Configure Installed Apps
@@ -173,7 +173,6 @@ conda config --set auto_activate_base False
 - NordVPN
 - Slack
 - Register Stay/Fantastical
-- 
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
@@ -204,8 +203,8 @@ brew cask cleanup
 > NOTE: This might already be done by copying the hidden **~./.gitconfig**.
 
 ```bash
-git config --global user.name "Eli Zucker"
-git config --global user.email "eli_zucker@brown.edu"
+git config --global user.name "EliZucker"
+git config --global user.email "EliZucker@users.noreply.github.com"
 git config --global credential.helper osxkeychain
 ```
 
@@ -225,6 +224,10 @@ git config --global credential.helper osxkeychain
   - Keyboard
 
       ![](./images/macOS-SysPrefs-Keyboard.png)
+
+  - Set lockscreen message
+
+  - Configure nightsight for sunrise/sunset
 
   - Internet Accounts
 
