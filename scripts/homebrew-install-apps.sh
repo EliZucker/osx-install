@@ -15,6 +15,7 @@ brew install kubectl
 brew install wget
 brew install sqlite
 brew install youtube-dl
+brew install webtorrent-cli
 
 brew cask install anaconda
 brew cask install adobe-creative-cloud
@@ -42,6 +43,7 @@ brew cask install docker
 brew cask install mactex
 brew cask install skype
 brew cask install wireshark
+brew cask install viscosity
 brew cask install zoomus
 brew cask install karabiner-elements
 brew cask install discord
