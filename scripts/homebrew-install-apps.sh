@@ -50,5 +50,7 @@ brew cask install discord
 # brew cask install arduino (this cask is broken)
 brew cask install disk-inventory-x
 brew cask install whatsyoursign
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo
+xattr -d -r com.apple.quarantine ~/Library/QuickLook
 echo "Oversight (last app) might hang.. "
 brew cask install oversight
