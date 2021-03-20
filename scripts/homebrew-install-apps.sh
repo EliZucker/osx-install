@@ -17,40 +17,40 @@ brew install sqlite
 brew install youtube-dl
 brew install webtorrent-cli
 
-brew cask install anaconda
-brew cask install adobe-creative-cloud
-brew cask install android-platform-tools
-brew cask install calibre
-brew cask install coconutbattery
-brew cask install iina
-brew cask install keka
-brew cask install kicad
-brew cask install selfcontrol
-brew cask install spectacle
-brew cask install iterm2
-brew cask install google-chrome
-brew cask install spotify
-brew cask install visual-studio-code
-brew cask install sequel-pro
-brew cask install slack
-brew cask install qbittorrent
-brew cask install handbrake
-brew cask install appcleaner
-brew cask install fantastical
-brew cask install intellij-idea
-brew cask install stay
-brew cask install docker
-brew cask install mactex
-brew cask install skype
-brew cask install wireshark
-brew cask install viscosity
-brew cask install zoomus
-brew cask install karabiner-elements
-brew cask install discord
+brew install --cask anaconda
+brew install --cask adobe-creative-cloud
+brew install --cask android-platform-tools
+brew install --cask calibre
+brew install --cask coconutbattery
+brew install --cask iina
+brew install --cask keka
+brew install --cask kicad
+brew install --cask selfcontrol
+brew install --cask spectacle
+brew install --cask iterm2
+brew install --cask google-chrome
+brew install --cask spotify
+brew install --cask visual-studio-code
+brew install --cask sequel-pro
+brew install --cask slack
+brew install --cask qbittorrent
+brew install --cask handbrake
+brew install --cask appcleaner
+brew install --cask fantastical
+brew install --cask intellij-idea
+brew install --cask stay
+brew install --cask docker
+brew install --cask mactex
+brew install --cask skype
+brew install --cask wireshark
+brew install --cask viscosity
+brew install --cask zoomus
+brew install --cask karabiner-elements
+brew install --cask discord
 # brew cask install arduino (this cask is broken)
-brew cask install disk-inventory-x
-brew cask install whatsyoursign
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo
+brew install --cask disk-inventory-x
+brew install --cask whatsyoursign
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize suspicious-package quicklookase qlvideo
 xattr -d -r com.apple.quarantine ~/Library/QuickLook
 echo "Oversight (last app) might hang.. "
-brew cask install oversight
+brew install --cask oversight
