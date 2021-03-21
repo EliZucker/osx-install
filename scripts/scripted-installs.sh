@@ -2,7 +2,6 @@
 
 # Adobe creative cloud installer
 # brew cask install adobe-creative-cloud
-/usr/local/Caskroom/adobe-creative-cloud/latest/Creative Cloud Installer.app
 
 echo "Setting some Mac settings..."
 

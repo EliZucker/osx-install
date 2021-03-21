@@ -6,7 +6,7 @@ curl -L http://install.ohmyz.sh | sh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/djui/alias-tips.git ${ZSH_CUSTOM1:-$ZSH/custom}/plugins/alias-tips
 
-# add this line to zshrc:
+# ADD THIS LINE TO ZSHRC:
 # plugins = (git zsh-autosuggestions alias-tips)
 
 # install shell integration & utilities

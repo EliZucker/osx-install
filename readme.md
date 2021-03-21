@@ -33,11 +33,13 @@ Do the following before paving the partition. This is to get the way I have thin
   - backup snippets & user settings to **[./AppSettings/VisualStudioCode](./AppSettings/VisualStudioCode)**
     - user settings: `~/Library/Application Support/Code/User`
 
-- Spectactle
-    - Shortcuts: `~/Library/Application Support/Spectacle`
+- Rectangle
+    - Shortcuts: `~/Library/Preferences/com.knollsoft.Rectangle.plist`
 
 - qBitorrent/Karabiner configs:
     - `~/.config `
+
+- (Screenshot Fantastical preferences)
 
 ### MacOS & System
 
@@ -79,7 +81,7 @@ The following installs & configuration should be done to setup automated install
 Install [Homebrew](http://brew.sh/) for automated installs & updates.
 
 ```bash
-curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/homebrew-install.sh | sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### Install apps via Homebrew: `homebrew-install-apps.sh`
@@ -129,8 +131,8 @@ curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/m
   - Then quit and copy configs to `~/.config ` (orignally in AppSettings folder)
 
 - Configure Window Management:
-  - Launch Spectacle
-  - Then quit and copy shortcuts to `~/Library/Application Support/Spectacle`
+  - Launch Rectangle
+  - Then quit and copy shortcuts to `~/Library/Preferences/com.knollsoft.Rectangle.plist`
 
 ### Setup command prompt (iTerm)
 
@@ -173,6 +175,7 @@ conda config --set auto_activate_base False
 - NordVPN
 - Slack
 - Register Stay/Fantastical
+- Configure Fantastical
 
 ## Additional downloads & installs Install My Personal Apps: `scripted-installs.sh`
 
@@ -195,7 +198,6 @@ curl -L https://raw.githubusercontent.com/EliZucker/osx-install/master/scripts/s
 brew doctor
 brew update
 brew cleanup
-brew cask cleanup
 ```
 
 ### Setup git
